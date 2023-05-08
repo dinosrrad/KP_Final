@@ -1,0 +1,481 @@
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* main page universal, header universal */
+
+nav {
+    width: 96%;
+    background-color:white;
+    border: solid black 1px;
+    border-radius: 40px;
+    display: flex;
+    padding: 6px 20px;
+    margin: 20px auto;
+}
+
+nav figure {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%,
+}
+
+nav figure a img, footer figure img {
+    max-width: 200px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-content: start;
+    margin: 10px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    width: 75%;
+    gap: 10px;
+}
+
+nav ul li {
+    max-width: 400px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    width:100%;
+    height: auto;
+}
+
+#heroimage {
+    background-image: url("../img/hero-img.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 140px 80px;
+}
+
+#BCimage {
+    background-image: url(../img/bcimage.jpeg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 140px 80px;
+}
+
+#aboutimage{
+    background-image: url("../img/About_Cover.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex; 
+}
+
+#heroimage h1, #BCimage h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin: 20px 0px;
+}
+
+#heroimage p, #BCimage p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    width: 400px;
+    margin: 20px 0px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+
+/* Main Body Section*/
+
+#PROJECTS, #CONCEPT, #PROCESS, #CONCLUSION, #INTRO, #COMPS, #EXP, #TALK  {
+    max-width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    padding: 0px 100px;
+}
+
+#PROJECTS H2, #ABOUTME H2, #CONCEPT H2, #PROCESS H2, #CONCLUSION H2, #INTRO H2, #COMPS H2, #EXP H2, #TALK H2 {
+    width: 26%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight:400;
+    text-decoration: none;
+    text-align:end;
+    border: solid black 1px;
+    border-radius: 40px;
+    padding: 6px 20px 6px 60px;
+    margin: 0px 20px 0px 0px;
+}
+
+#PROJECTS section {
+    min-width: 70%;
+    height:600px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+#PROJECTS section a {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align:center center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.4rem;
+    color:black;
+    border: solid black 1px;
+    border-radius: 40px;
+    background-color:white;
+    width: 46%;
+    height: 46%;
+    padding: 10px 10px;
+}
+
+#BUTTERCUP {
+    background-image: url(../img/BC_Cover.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#HARDIE {
+    background-image: url(../img/HC_Cover.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#FINDING {
+    background-image: url(../img/FH_Cover.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#HERITAGE {
+    background-image: url(../img/CH_Cover.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ABOUTME {
+    max-width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 40px 0px;
+    padding: 0px 100px;
+}
+
+#ABOUTME section {
+    background-image: url("../img/artboard-1-\(1440x800\)-6433b0dfb246857d64ddd162.jpeg");
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    align-items: flex-start;
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 40px 40px;
+
+}
+
+#ABOUTME section p {
+    width: 380px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    font-weight:100;
+    text-align: justify;
+}
+
+#HELLO {
+    height: auto;
+    min-width: 120px;
+    align-items: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: solid black 1px;
+    border-radius: 40px;
+    padding: 10px 40px; 
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    border-top: solid black 1px;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+footer a {
+    height: auto;
+    min-width: 120px;
+    align-items: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 10px 40px;
+}
+
+
+/*sub-page info*/
+
+#CONCEPT section {
+    width: 70%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-content: flex-start;
+    row-gap: 20px;
+
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+#CONCEPT section p {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+#CONCEPT div {
+    max-width: 70%;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    
+}
+
+#CONCEPT div section {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 30px; 
+    margin: 20px 0px;
+    row-gap: 20px;
+    
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+#CONCEPT div section p {
+    padding: 0px 0px;
+}
+
+#PROCESS section, #CONCLUSION section {
+    width: 70%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-content: flex-start;
+    row-gap: 20px;
+}
+
+#PROCESS section img {
+    width: 240px;
+    border: solid black 1px;
+    border-radius: 20px;   
+}
+
+#CONCLUSION section p {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 2rem;
+    text-align: justify;
+
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+#PHOTOS {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#PHOTOS img {
+    max-width: 25%;
+}
+
+/* ABOUT ME page style */
+
+#INTRO section, #TALK section {
+    width: 70%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-end;
+    row-gap: 20px;
+
+    border: solid black 1px;
+    border-radius: 20px;
+}
+
+#INTRO section p, #TALK section p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+#INTRO section a, #TALK section a {
+    height: auto;
+    min-width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: solid black 1px;
+    border-radius: 40px;
+    padding: 10px 30px; 
+    background-color: #9AC1B1;
+    margin: 0px 30px 20px 30px;
+}
+
+#COMPS section, #EXP section {
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-content: space-between;
+    row-gap: 20px;
+}
+
+#COMPS section div, #EXP section div {
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding: 20px 30px;
+
+    border: solid black 1px;
+    border-radius: 40px;
+}
+
+#COMPS section div h3, #EXP section div h3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6rem;
+    text-align:start;
+}
+
+#COMPS section div p, #EXP section div p {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 1.6rem;
+    text-align:start;
+}
+
+
